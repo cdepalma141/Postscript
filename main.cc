@@ -1,15 +1,19 @@
-class Postscript {
-public:
-  
-};
+#include<iostream>
+#include "Postscript.h"
+using namespace std;
 
 int main() {
   Postscript p("test.ps");
   p.line(0,0, 300,400);  // 0 0 moveto 300 400 lineto stroke
+  
+/*
   int r = 255, g = 0, b = 0;
   p.setColor(int r, int g, int b);
+  */
+  int x = 0, y = 0, w = 100, h = 100;
   p.drawRect(x, y, w, h);   // x y moveto x+w y lineto x+w y+h lineto ... closepath stroke 
-  p.fillRect(x, y, w, h);   // x y moveto x+w y lineto x+w y+h lineto ... closepath fill 
+/*  
+p.fillRect(x, y, w, h);   // x y moveto x+w y lineto x+w y+h lineto ... closepath fill 
   p.setFillColor(int r, int g, int b); // 1.0 0.5 0 setrgbcolor
   // optional, figure out how you want to manage color
   p.setStrokeColor(int r, int g, int b);
@@ -19,11 +23,10 @@ int main() {
   p.text(x,y, "testing testing 123"); // look it up  setfont  (ABC) show
 
   p.grid(300, 50, 500, 400, 50, 700);
-
+*/
 
   
 }
   
 
 
-}
