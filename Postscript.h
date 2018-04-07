@@ -1,6 +1,12 @@
-//
-// Created by Connor DePalma on 4/1/18.
-//
+/*
+
+ HW4b - Postscript Printing
+
+ Connor DePalma and Yupei Liang.
+
+ I pledge my honor that I have abided by the Stevens Honor System.
+
+ */
 
 #pragma once
 #include <iostream>
@@ -35,4 +41,6 @@ public:
     void drawCircle(double x, double y, double r);
     
     void text(int x, int y, std::string t);
+
+    void grid(double xmin, double xmax, double xdiv,double ymin, double ymax, double ydiv);
 };
