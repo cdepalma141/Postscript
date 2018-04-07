@@ -1,3 +1,12 @@
+/*
+
+ HW4b - Postscript Printing
+
+ Connor DePalma and Yupei Liang.
+
+ I pledge my honor that I have abided by the Stevens Honor System.
+
+ */
 #include<iostream>
 #include "Postscript.h"
 using namespace std;
@@ -5,7 +14,7 @@ using namespace std;
 int main() {
   Postscript p("test.ps");
 
-  p.line(0,0, 300,400);  // 0 0 moveto 300 400 lineto stroke
+  p.line(0,0, 300,300);  // 0 0 moveto 300 400 lineto stroke
 
 
   double r = 1, g = 0, b = 0;
@@ -36,11 +45,13 @@ int main() {
 
   p.drawCircle(350,200,50); // x y 0 360 r arc stroke
 
-/*
-  p.text(x,y, "testing testing 123"); // look it up  setfont  (ABC) show
 
-  p.grid(300, 50, 500, 400, 50, 700);
-*/
+  //p.text(x,y, "testing testing 123"); // look it up  setfont  (ABC) show
+  r = 0, g = 0, b = 0;
+  p.setColor(r, g, b);
+
+  p.grid(300, 500, 50, 400, 700, 50);
+
 
 
 }
