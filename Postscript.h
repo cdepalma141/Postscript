@@ -20,6 +20,7 @@ public:
     void line(double x, double y, double x1, double y1);
 
     void drawRect(double x, double y, double w, double h);
-
+    
+    void setColor(int r, int g, int b);
 
 };

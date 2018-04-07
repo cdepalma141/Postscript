@@ -25,3 +25,9 @@ void Postscript::drawRect(double x, double y, double w, double h) {
            << "closepath\nstroke\n\n";
 
 }
+
+void Postscript::setColor(int r, int g, int b) {
+    stream  <<r/255<< " " << g/255<< " " << b/255 <<" "<<"setrgbcolor\n";
+
+    
+}

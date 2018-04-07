@@ -4,12 +4,14 @@ using namespace std;
 
 int main() {
   Postscript p("test.ps");
+
   p.line(0,0, 300,400);  // 0 0 moveto 300 400 lineto stroke
   
-/*
-  int r = 255, g = 0, b = 0;
-  p.setColor(int r, int g, int b);
-  */
+
+ int r = 255, g = 0, b = 0;
+    p.setColor(r, g, b);
+
+ 
   int x = 0, y = 0, w = 100, h = 100;
   p.drawRect(x, y, w, h);   // x y moveto x+w y lineto x+w y+h lineto ... closepath stroke 
 /*  
