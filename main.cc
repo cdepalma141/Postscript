@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 #include "Postscript.h"
 using namespace std;
 
@@ -36,11 +37,10 @@ int main() {
 
   p.drawCircle(350,200,50); // x y 0 360 r arc stroke
 
-/*
-  p.text(x,y, "testing testing 123"); // look it up  setfont  (ABC) show
+    x=350, y= 350;
+    p.text(x,y, "testing testing 123"); // look it up  setfont  (ABC) show
 
-  p.grid(300, 50, 500, 400, 50, 700);
-*/
+//  p.grid(300, 50, 500, 400, 50, 700);
 
 
 }

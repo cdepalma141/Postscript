@@ -1,7 +1,7 @@
 //
 // Created by Connor DePalma on 4/1/18.
 //
-
+# include <string>
 #include "Postscript.h"
 
 Postscript::Postscript(std::string const &file) : file(file) {
@@ -66,4 +66,10 @@ void Postscript::drawCircle(double x, double y, double r){
 
     stream << x << " " << y << " " << r << " 0 360 " << " arc\nclosepath\nstroke\n\n";
 
+}
+
+void Postscript::text(int x, int y, std::string t){
+    
+    stream << "/Times-Roman" <<" "<<"findfont\n"<< "20"<< " "<<"scalefont\n" <<" "<<"setfont\n"
+    << x<<" "<< y<< " " << "moveto"<< " " << "("<< t << ")"<<" "<< "show\n";
 }

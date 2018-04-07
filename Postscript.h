@@ -5,6 +5,7 @@
 #pragma once
 #include <iostream>
 #include <fstream>
+#include<string>
 
 class Postscript {
 
@@ -32,4 +33,6 @@ public:
     void fillTriangle(double x1, double y1, double x2, double y2, double x3, double y3);
 
     void drawCircle(double x, double y, double r);
+    
+    void text(int x, int y, std::string t);
 };
