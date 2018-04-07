@@ -89,7 +89,7 @@ void Postscript::grid(double xmin, double xmax, double xdiv,double ymin, double 
 }
 
 void Postscript::text(int x, int y, std::string t){
-    
-    stream << "/Times-Roman" <<" "<<"findfont\n"<< "20"<< " "<<"scalefont\n" <<" "<<"setfont\n"
-    << x<<" "<< y<< " " << "moveto"<< " " << "("<< t << ")"<<" "<< "show\n";
+
+    stream << "/Times-Roman" <<" "<<"findfont\n"<< "20"<< " "<<"scalefont\n" << "setfont\n"
+    << x<<" "<< y<< " " << "moveto"<< " " << "("<< t << ")"<<" "<< "show\n\n";
 }

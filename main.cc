@@ -46,10 +46,10 @@ int main() {
 
   p.drawCircle(350,200,50); // x y 0 360 r arc stroke
 
-    x=350, y= 350;
-    p.text(x,y, "testing testing 123"); // look it up  setfont  (ABC) show
+  x=350, y= 350;
+  p.text(x,y, "testing testing 123"); // look it up  setfont  (ABC) show
 
-  r = 1, g = 1, b = 0;
+  r = 1, g = 0, b = 0;
   p.setColor(r, g, b);
 
   p.grid(300, 500, 50, 400, 700, 50);
