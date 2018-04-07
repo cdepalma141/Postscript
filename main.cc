@@ -27,6 +27,3 @@ p.fillRect(x, y, w, h);   // x y moveto x+w y lineto x+w y+h lineto ... closepat
 
   
 }
-  
-
-
