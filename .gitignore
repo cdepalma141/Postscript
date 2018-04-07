@@ -1,0 +1,5 @@
+#Ignores Following
+*.out
+
+#so we dont override each others test files
+*.ps
