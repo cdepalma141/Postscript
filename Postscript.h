@@ -22,5 +22,9 @@ public:
     void drawRect(double x, double y, double w, double h);
     
     void setColor(int r, int g, int b);
+    
+    void fillRect(double x, double y, double w, double h);
+    
+    void setFillColor(double r, double g, double b);
 
 };

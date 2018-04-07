@@ -31,3 +31,15 @@ void Postscript::setColor(int r, int g, int b) {
 
     
 }
+
+void Postscript::fillRect(double x, double y, double w, double h) {
+
+
+    stream << x << " " << y << " moveto\n" << x+w << " " << y << " lineto\n"
+    << x+w << " " << y+h<< " lineto\n" << x << " " << y+h << " lineto\n"
+    << "closepath\nfill\n";
+}
+
+void Postscript::setFillColor(double r, double g, double b){
+    stream <<r<< " " << g<< " " << b <<" "<<"setrgbcolor\n";
+};
