@@ -6,7 +6,7 @@
 
 Postscript::Postscript(std::string const &file) : file(file) {
 
-    stream.open(file, std::ofstream::out | std::ofstream::app); //opens stream and allows for each new addition to be appended to the last
+    stream.open(file, std::ios::trunc | std::ios::out); //opens stream and allows for each new addition to be appended to the last
 
 }
 
@@ -29,7 +29,7 @@ void Postscript::drawRect(double x, double y, double w, double h) {
 void Postscript::setColor(int r, int g, int b) {
     stream  <<r/255<< " " << g/255<< " " << b/255 <<" "<<"setrgbcolor\n";
 
-    
+
 }
 
 void Postscript::fillRect(double x, double y, double w, double h) {
